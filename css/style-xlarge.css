@@ -1,0 +1,1182 @@
+html
+{
+	position			: relative;
+	box-sizing			: border-box;
+	width				: 100%;
+	height				: 100%;
+}
+body
+{
+	position			: relative;
+	box-sizing			: border-box;
+	width				: 100%;
+	height				: auto;
+	margin				: 0;
+	padding				: 0;
+	background-color	: #f0eae6;
+	overflow-x			: hidden;
+}
+/*=========================================================
+#### HEADER PART ####
+===========================================================*/
+.Header-wrapper
+{
+	position 			: absolute;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: 80px;
+	z-index 			: 1;
+}
+	.Header-wrapper .Header
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		float 				: left;
+		width 				: 100%;
+		height 				: 80px;
+	}
+		.Header-wrapper .Header .logo
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 30%;
+			height 				: 80px;
+		}
+			.Header-wrapper .Header .logo img
+			{
+				width 				: 30%;
+				height 				: 100%;
+				padding 			: 5px 10px;
+			}
+		.Header-wrapper .Header .menu
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: right;
+			width 				: 70%;
+			height 				: 80px;
+		}
+			.Header-wrapper .Header .menu ul
+			{
+				float 				: right;
+			}
+			.Header-wrapper .Header .menu ul li
+			{
+				list-style 			: none;
+				display 			: inline-block;
+				padding 			: 25px 10px;
+			}
+			.Header-wrapper .Header .menu ul li a
+			{
+				font-family 		: "Roboto";
+				font-size 			: 1.3rem;
+				color 				: #fff;
+				text-decoration 	: none;	
+				padding 			: 5px 15px;
+			}
+			.Header-wrapper .Header .menu ul li a:hover
+			{
+				background-color 	: #D0BE24;
+			}
+
+/*=========================================================
+#### BANNER PART ####
+===========================================================*/
+.banner-wrapper
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: 700px;
+}
+	.banner-wrapper .banner
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		float 				: left;
+		width 				: 100%;
+		height 				: 100%;
+	}
+		.banner-wrapper .banner img
+		{
+			position 			: absolute;
+			width 				: 100%;
+			height 				: 100%;
+			display 			: none;
+			filter 				: brightness(70%);
+		}
+		.banner-wrapper .banner img.active
+		{
+			display 			: block;
+		}
+	.banner-wrapper .leftArrow,
+	.banner-wrapper .rightArrow
+	{
+		position 			: absolute;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 40px;
+		height 				: 40px;
+		margin-left 		: 50px;
+		top 				: 350px;
+		border 				: 2px solid #fff;
+	}
+	.banner-wrapper .leftArrow
+	{
+		border-radius 		: 50px 0px 0px 50px;
+	}
+	.banner-wrapper .rightArrow
+	{
+		left 				: 50px;
+		border-radius 		: 0px 50px 50px 0px;
+	}
+		.banner-wrapper .leftArrow .arrow,
+		.banner-wrapper .rightArrow .arrow
+		{
+			position 			: absolute;
+			width 				: 10px;
+			height 				: 10px;
+			border 				: 4px solid yellow;
+			border-left 		: none;
+			border-top 			: none;
+			top 				: 30%;
+		}
+		.banner-wrapper .leftArrow .arrow
+		{
+			transform 			: rotate(135deg);
+			margin-left 		: 13px;
+		}
+		.banner-wrapper .rightArrow .arrow
+		{
+			transform 			: rotate(-45deg);
+			margin-left 		: 10px;
+		}
+			.banner-wrapper .leftArrow:hover,
+			.banner-wrapper .rightArrow:hover
+			{
+				background-color 	: #F04545;
+				cursor 				: pointer;
+			}
+	.banner-wrapper .text
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 100%;
+		height 				: 200px;
+		top 				: 150px;
+		margin 				: 0 auto;
+		max-width 			: 1440px;
+	}
+		.banner-wrapper .text .textLeft
+		{
+			position 			: absolute;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 45%;
+			height 				: 200px;
+		}
+			.banner-wrapper .text .textLeft h1
+			{
+				font-family 		: "Ramabhadra";
+				font-size 			: 6.0rem;
+				font-weight 		: 900;
+				color 				: #fff;
+				margin-top 			: 0;
+				margin-right 		: 20px;
+				text-align 			: right;
+				text-shadow 		: 10px 10px 10px rgba(0,0,0,0.7);
+				line-height 		: 1;
+			}
+		.banner-wrapper .text .textRight
+		{
+			position 			: absolute;
+			display 			: block;
+			box-sizing 			: border-box;
+			right 				: 0;
+			width 				: 55%;
+			height 				: 150px;
+		}
+			.banner-wrapper .text .textRight h2
+			{
+				font-family 		: "Roboto";
+				font-size 			: 2.0rem;
+				font-weight 		: 700;
+				color 				: #FED019;
+				padding 			: 0px 40px 0px 40px;
+				text-shadow 		: 3px 7px 7px rgba(0,0,0,0.5); 
+			}
+			.banner-wrapper .text .textRight h3
+			{
+				font-family 		: "Roboto";
+				font-size 			: 1.0rem;
+				font-weight 		: 500;
+				color 				: #F04545;
+				text-transform 		: uppercase;
+				padding 			: 0px 40px 0px 40px;
+				text-shadow 		: 3px 7px 7px rgba(0,0,0,0.5);
+			}
+/*=========================================================
+#### CARD MODEL PART ####
+===========================================================*/
+.card-wrapper
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: 300px;
+	margin-top 			: -240px;
+}
+	.card-wrapper .card
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 100%;
+		height 				: 300px;
+		margin 				: 0 auto;
+		max-width 			: 1440px;
+	}
+		.card-wrapper .card .container
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 22%;
+			height 				: 270px;
+			margin 				: 0px 20px;
+		}
+			.card-wrapper .card .container .image
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 100%;
+				height 				: 270px;
+			}
+				.card-wrapper .card .container .image img
+				{
+					width 				: 100%;
+					height 				: 100%;
+					border-radius 		: 15px;
+					filter 				: brightness(70%);
+				}
+			.card-wrapper .card .container .details
+			{
+				position 			: absolute;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 100%;
+				height 				: 270px;
+			}
+				.card-wrapper .card .container .details h2
+				{
+					color 				: #fff;
+					font-family 		: "Helvetica";
+					font-size 			: 2.5rem;
+					font-weight 		: 700;
+					padding 			: 0px 20px;
+					text-shadow 		: 3px 7px 7px rgba(0,0,0,0.7);
+				}
+				.card-wrapper .card .container .details h3
+				{
+					color 				: #fff;
+					font-family 		: "Helvetica";
+					font-size 			: 1.2rem;
+					font-weight 		: 500;
+					margin 				: -20px 0px 0px 20px;
+					line-height 		: 25px;
+					text-shadow 		: 3px 5px 7px rgba(0,0,0,0.7);
+				}
+				.card-wrapper .card .container .details button
+				{
+					position 			: relative;
+					float 				: right;
+					right 				: 10px;
+					top 				: 70px;
+					padding 			: 10px 20px;
+					border 				: none;
+					border-radius 		: 20px;
+					cursor 				: pointer;
+					outline 			: none;
+				}
+				.card-wrapper .card .container .details button:hover
+				{
+					background-color 	: #D7EA55;
+					border 				: none;
+					border-radius 		: 20px;
+					outline 			: none;
+				}
+					.card-wrapper .card .container .details button a
+					{
+						list-style 			: none;
+						text-decoration 	: none;
+						color 				: #161616;
+						font-weight 		: 700; 
+					}
+/*=========================================================
+#### SERVICE PART ####
+===========================================================*/
+.service-wrapper
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: 700px;
+	background-color 	: #161616;
+	margin-top 			: 100px;
+}
+	.service-wrapper .service
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 90%;
+		height 				: 700px;
+		margin 				: 0 auto;
+		max-width 			: 1440px;
+	}
+		.service-wrapper .service .title
+		{
+			color 				: #fff;
+			font-weight 		: 700;
+			font-size 			: 3.2rem;
+			text-align 			: center;
+			font-family 		: "Ramabhadra";
+		}
+	.service-wrapper .service .container
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		float 				: left;
+		width 				: 100%;
+		height 				: 600px;
+		margin-top 			: 50px;
+	}
+		.service-wrapper .service .container .leftContent
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 49%;
+			height 				: 500px;
+		}
+			.service-wrapper .service .container .leftContent img
+			{
+				width 				: 100%;
+				height 				: 100%;
+				filter 				: brightness(80%);
+				cursor 				: pointer;
+				transition 			: .6s ease-in-out;
+			}
+			.service-wrapper .service .container .leftContent figure
+			{
+				overflow 			: hidden;
+				width 				: 100%;
+				height 				: 100%;
+				margin 				: 0;
+			}
+			.service-wrapper .service .container .leftContent:hover img
+			{
+				transform 			: scale(1.08);
+			}
+			.service-wrapper .service .container .leftContent h2
+			{
+				position 			: absolute;
+				bottom 				: 80px;
+				color 				: #fff;
+				font-family 		: "Helvetica";
+				font-size 			: 4.0rem;
+				font-weight 		: 700;
+				padding 			: 0px 50px;
+				text-shadow 		: 3px 7px 7px rgba(0,0,0,0.7);
+			}
+			.service-wrapper .service .container .leftContent button
+			{
+				position 			: absolute;
+				float 				: left;
+				left 				: 50px;
+				bottom				: 70px;
+				padding 			: 10px 20px;
+				border 				: none;
+				border-radius 		: 50px;
+				cursor 				: pointer;
+				outline 			: none;
+				background-color 	: transparent;
+				border  			: 2px solid #fff;
+			}
+			.service-wrapper .service .container .leftContent button:hover
+			{
+				background-color 	: #D0BE24;
+				border 				: none;
+				border-radius 		: 50px;
+				outline 			: none; 
+			}
+				.service-wrapper .service .container .leftContent button a
+				{
+					list-style 			: none;
+					text-decoration 	: none;
+					color 				: #161616;
+					font-weight 		: 500; 
+					font-size 			: 20px;
+					color 				: #fff;
+				}
+		.service-wrapper .service .container .rightContent
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: right;
+			width 				: 49%;
+			height 				: 500px;
+		}
+			.service-wrapper .service .container .rightContent h2
+			{
+				position 			: absolute;
+				bottom 				: 30px;
+				color 				: #fff;
+				font-family 		: "Helvetica";
+				font-size 			: 4.0rem;
+				font-weight 		: 700;
+				padding 			: 0px 50px;
+				text-shadow 		: 3px 7px 7px rgba(0,0,0,0.7);
+			}
+			.service-wrapper .service .container .rightContent button
+			{
+				position 			: absolute;
+				float 				: left;
+				left 				: 50px;
+				bottom				: 30px;
+				padding 			: 8px 15px;
+				border 				: none;
+				border-radius 		: 50px;
+				cursor 				: pointer;
+				outline 			: none;
+				background-color 	: transparent;
+				border  			: 2px solid #fff;
+			}
+			.service-wrapper .service .container .rightContent button:hover
+			{
+				background-color 	: #D0BE24;
+				border 				: none;
+				border-radius 		: 50px;
+				outline 			: none; 
+			}
+				.service-wrapper .service .container .rightContent button a
+				{
+					list-style 			: none;
+					text-decoration 	: none;
+					color 				: #161616;
+					font-weight 		: 500; 
+					font-size 			: 20px;
+					color 				: #fff;
+				}
+			.service-wrapper .service .container .rightContent .top
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 100%;
+				height 				: 235px;
+			}
+				.service-wrapper .service .container .rightContent .top img
+				{
+					width 				: 100%;
+					height 				: 100%;
+					opacity 			: 0.7;
+					cursor 				: pointer;
+					transform 			: scale(1);
+					transition 			: .6s ease-in-out;
+				}
+				.service-wrapper .service .container .rightContent .top figure
+				{
+					overflow 			: hidden;
+					width 				: 100%;
+					height 				: 100%;
+					margin 				: 0;
+				}
+				.service-wrapper .service .container .rightContent .top:hover img
+				{
+					transform 			: scale(1.08);
+				}
+			.service-wrapper .service .container .rightContent .bottom
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 100%;
+				height 				: 235px;
+				margin-top 			: 30px;
+			}
+				.service-wrapper .service .container .rightContent .bottom img
+				{
+					width 				: 100%;
+					height 				: 100%;
+					opacity 			: 0.7;
+					cursor 				: pointer;
+					transform 			: scale(1);
+					transition 			: .6s ease-in-out;
+				}
+				.service-wrapper .service .container .rightContent .bottom figure
+				{
+					overflow 			: hidden;
+					width 				: 100%;
+					height 				: 100%;
+					margin 				: 0;
+				}
+				.service-wrapper .service .container .rightContent .bottom:hover img
+				{
+					transform 			: scale(1.08);
+				}
+/*=========================================================
+#### BIG BOX IMAGE & TEXT PART ####
+===========================================================*/
+.bigImgText-wrapper
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: auto;
+	margin-top 			: 50px;
+}
+	.bigImgText-wrapper .title
+	{
+		color 				: #161616;
+		font-weight 		: 700;
+		font-size 			: 3.2rem;
+		text-align 			: center;
+		font-family 		: "Ramabhadra";
+	}
+	.bigImgText-wrapper .bigImgText
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 100%;
+		height 				: auto;
+		margin 				: 0 auto;
+		max-width 			: 1440px;
+		margin-top 			: 50px;
+	}
+		.bigImgText-wrapper .bigImgText .textImg
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 100%;
+			height 				: 600px;
+		}
+			.bigImgText-wrapper .bigImgText .textImg .text
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 50%;
+				height 				: 600px;
+			}
+				.bigImgText-wrapper .bigImgText .textImg .text h2
+				{
+					font-size 			: 3.0rem;
+					font-weight 		: 300;
+					font-family 		: "Ramabhadra";
+					padding 			: 0 50px;
+					line-height 		: 1;
+					color 				: #333;
+				}
+				.bigImgText-wrapper .bigImgText .textImg .text p
+				{
+					font-size 			: 1.0rem;
+					font-weight 		: 300;
+					font-family 		: "Roboto";
+					padding 			: 0 50px;
+					text-align 			: justify;
+				}
+			.bigImgText-wrapper .bigImgText .textImg .image
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 50%;
+				height 				: 600px;
+			}
+				.bigImgText-wrapper .bigImgText .textImg .image img
+				{
+					width 				: 100%;
+					height 				: 100%;
+					filter 				: brightness(80%);
+				}
+		.bigImgText-wrapper .bigImgText .imgText
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 100%;
+			height 				: 600px;
+			/*margin-top 			: 100px;*/
+		}
+			.bigImgText-wrapper .bigImgText .imgText .image
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 50%;
+				height 				: 600px;
+			}
+				.bigImgText-wrapper .bigImgText .imgText .image img
+				{
+					width 				: 100%;
+					height 				: 100%;
+					opacity 			: 0.8;	
+				}
+			.bigImgText-wrapper .bigImgText .imgText .text
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 50%;
+				height 				: 600px;
+			}
+				.bigImgText-wrapper .bigImgText .imgText .text h2
+				{
+					font-size 			: 3.0rem;
+					font-weight 		: 300;
+					font-family 		: "Ramabhadra";
+					padding 			: 0 50px;
+					line-height 		: 1;
+					color 				: #333;
+				}
+				.bigImgText-wrapper .bigImgText .imgText .text p
+				{
+					font-size 			: 1.0rem;
+					font-weight 		: 300;
+					font-family 		: "Roboto";
+					padding 			: 0 50px;
+					text-align 			: justify;
+				}
+
+/*=========================================================
+#### PIC-TEXT PART ####
+===========================================================*/
+.picText-wrapper
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: auto;
+	margin-top 			: 100px;
+	background-color 	: #161616;
+}
+	.picText-wrapper .picText
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 90%;
+		height 				: auto;
+		margin 				: 0 auto;
+		max-width 			: 1440px;
+	}
+		.picText-wrapper .picText .title
+		{
+			color 				: #fff;
+			font-weight 		: 700;
+			font-size 			: 3.2rem;
+			text-align 			: center;
+			font-family 		: "Ramabhadra";
+		}
+		.picText-wrapper .picText .container
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 100%;
+			height 				: 1000px;
+			margin-top 			: 30px;
+		}
+			.picText-wrapper .picText .container .content img
+			{
+				width 				: 100%;
+				height 				: 100%;
+				filter 				: brightness(80%);
+				transition 			: 0.6s ease-in-out;
+			}
+			.picText-wrapper .picText .container .content figure
+			{
+				overflow 			: hidden;
+				width 				: 100%;
+				height 				: 100%;
+				margin 				: 0;
+			}
+				.picText-wrapper .picText .container .content:hover img
+				{
+					transform 			: scale(1.08);	
+				}
+				.picText-wrapper .picText .container .content .explore
+				{
+					position 			: absolute;
+					bottom 				: -12px;
+					right 				: -52px;
+					width 				: 0;
+					height 				: 0;
+					border-left 		: 80px solid transparent;
+					border-right 		: 80px solid transparent;
+					border-top 			: 80px solid #8901CD;
+					transform 			: rotate(-45deg);
+					opacity 			: 0;
+					cursor 				: pointer;
+				}
+				.picText-wrapper .picText .container .content .details
+				{
+					position 			: relative;
+					display 			: block;
+					box-sizing 			: border-box;
+					float 				: left;
+					width 				: 100%;
+					height 				: 100px;
+				}
+					.picText-wrapper .picText .container .content .details h3
+					{
+						color 				: #fff;
+						font-family 		: "Ramabhadra";
+						margin-top 			: 5px;
+						font-weight 		: 500;
+						font-size 			: 1.6rem;
+					}
+					.picText-wrapper .picText .container .content .details p
+					{
+						color 				: #ddd;
+						font-family 		: "Roboto";
+						margin-top 			: -25px;
+					}
+				.picText-wrapper .picText .container .content .explore .fy
+				{
+					position 			: relative;
+					display 			: block;
+					box-sizing 			: border-box;
+					width 				: 40px;
+					height 				: 40px;
+					margin 				: -60px -15px;
+					font-size 			: 30px;
+					color 				: #fff;
+					transform 			: rotate(45deg);
+				}
+			.picText-wrapper .picText .container .content:hover .explore
+			{
+				opacity 			: 1;				
+				transition 			: .5s ease-in-out;
+			}
+			.picText-wrapper .picText .container .content .explore:hover 
+			{
+				border-top 			: 80px solid #060E45;
+			}
+			.picText-wrapper .picText .container .content:nth-child(1)
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 30%;
+				height 				: 200px;
+				top 				: 0;
+				left 				: 0;
+				margin 				: 20px;
+			}
+			.picText-wrapper .picText .container .content:nth-child(2)
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 30%;
+				height 				: 200px;			
+				margin 				: 20px;
+			}
+			.picText-wrapper .picText .container .content:nth-child(3)
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 30%;
+				height 				: 420px;
+				margin 				: 20px;
+			}
+			.picText-wrapper .picText .container .content:nth-child(4)
+			{
+				position 			: absolute;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 30%;
+				height 				: 200px;
+				top 				: 320px;
+				margin 				: 20px;
+			}
+			.picText-wrapper .picText .container .content:nth-child(5)
+			{
+				position 			: absolute;
+				display 			: block;
+				box-sizing 			: border-box;
+				width 				: 30%;
+				height 				: 520px;
+				left 				: 30%;
+				top 				: 320px;
+				margin 				: 20px 0px 0px 60px ;
+			}
+			.picText-wrapper .picText .container .content:nth-child(6)
+			{
+				position 			: absolute;
+				display 			: block;
+				box-sizing 			: border-box;
+				width 				: 30%;
+				height 				: 300px;
+				left 				: 60%;
+				top 				: 500px;
+				margin 				: 60px 0px 0px 100px ;
+			}
+			.picText-wrapper .picText .container .content:nth-child(7)
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 30%;
+				height 				: 200px;
+				margin-left			: 20px;
+				margin-top 			: 200px;
+			}
+
+/*=========================================================
+#### BOX MODEL PART ####
+===========================================================*/
+.box-wrapper
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: auto;
+	margin-top 			: 50px;
+}
+	.box-wrapper .box
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 90%;
+		height 				: auto;
+		margin 				: 0 auto;
+		max-width 			: 1440px;
+	}
+		.box-wrapper .box .title
+		{
+			color 				: #161616;
+			font-weight 		: 700;
+			font-size 			: 3.2rem;
+			text-align 			: center;
+			font-family 		: "Ramabhadra";
+		}
+		.box-wrapper .box .container
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 30%;
+			height 				: auto;
+			margin 				: 0px 20px;
+			margin-top 			: 50px;
+		}
+			.box-wrapper .box .container .image
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 100%;
+				height 				: 200px;
+			}
+				.box-wrapper .box .container .image img
+				{
+					width 				: 100%;
+					height 				: 100%;
+					filter 				: brightness(80%);
+				}
+			.box-wrapper .box .container .text
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 100%;
+				height 				: 400px;
+				background-color 	: #fff;
+				box-shadow 			: 0 5px 5px rgba(0,0,0,.6);
+			}
+			.box-wrapper .box .container .text:hover
+			{
+				box-shadow 			: 0 20px 30px rgba(0,0,0,.5);
+				transition 			: 0.2 ease-in-out;
+			}
+				.box-wrapper .box .container .text h2
+				{
+					color 				: #444444;
+					font-family 		: "Ramabhadra";
+					text-transform 		: uppercase;
+					text-align 			: justify;
+					font-size 			: 1.4rem;
+					font-weight 		: 300;
+					line-height 		: 30px;
+					padding 			: 0px 20px;
+				}
+				.box-wrapper .box .container .text h3
+				{
+					color 				: #444444;
+					font-family 		: "Roboto";
+					text-align 			: justify;
+					font-size 			: 1.0rem;
+					font-weight 		: 500;
+					padding 			: 0px 20px;
+					margin-top 			: 30px;
+				}
+				.box-wrapper .box .container .text a
+				{
+					position 			: relative;
+					float 				: left;
+					text-align 			: center;
+					color 				: blue;
+					font-family 		: "Roboto";
+					text-decoration 	: none;
+					cursor 				: pointer;
+					top 				: 70px;
+					margin-left 		: 35%;
+					border 				: 2px solid #161616;
+					border-radius 		: 50px;
+					padding 			: 5px 10px;
+				}
+					.box-wrapper .box .container .text a:hover
+					{
+						background-color 	: #161616;
+						color 				: #fff;
+					}
+/*=========================================================
+#### FOOTER PART ####
+===========================================================*/
+.footer-wrapper
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: 500px;
+	margin-top 			: 100px;
+	background-color 	: #253E4A;
+}
+	.footer-wrapper .footer
+	{
+		position 			: relative;
+		display 			: block;
+		box-sizing 			: border-box;
+		width 				: 90%;
+		height 				: auto;
+		margin 				: 0 auto;
+		max-width 			: 1440px;
+	}
+		.footer-wrapper .footer .top
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 100%;
+			height 				: 50px;
+			border-bottom 		: 2px solid #666;
+			margin-top 			: 10px;
+		}
+			.footer-wrapper .footer .top .fy 
+				{
+					position 			: relative;
+					display 			: block;
+					float 				: right;
+					width 				: 20px;
+					height 				: 20px;
+					margin-left 		: 25px;
+					cursor 				: pointer;
+				}
+				.footer-wrapper .footer .top .fy:hover
+				{
+					transform 			: scale(1.1);
+				}
+					.footer-wrapper .footer .top .fy-facebook
+					{
+						font-size 			: 20px;
+						color 				: #fff;
+						text-align 			: center;
+						padding 			: 10px;
+						border-radius 		: 50%;
+						background-color 	: #4267B2;
+					}
+					.footer-wrapper .footer .top .fy-twitter
+					{
+						font-size 			: 20px;
+						color 				: #fff;
+						text-align 			: center;
+						padding 			: 10px;
+						border-radius 		: 50%;
+						background-color 	: #1DA1F2;
+					}
+					.footer-wrapper .footer .top .fy-youtube
+					{
+						font-size 			: 20px;
+						color 				: #fff;
+						text-align 			: center;
+						padding 			: 10px 11px;
+						border-radius 		: 50%;
+						background-color 	: #FF0000;
+					}
+					.footer-wrapper .footer .top .fy-instagram
+					{
+						font-size 			: 20px;
+						color 				: #fff;
+						text-align 			: center;
+						padding 			: 10px 11px;
+						border-radius 		: 50%;
+						background-color 	: #f09433;
+						background-image 	: linear-gradient(45deg, #fbad50, #cd486b, #4c68d7);
+					}
+		.footer-wrapper .footer .container
+		{
+			position 			: relative;
+			display 			: block;
+			box-sizing 			: border-box;
+			float 				: left;
+			width 				: 100%;
+			height 				: 350px;
+			margin-top 			: 50px;
+		}	
+			.footer-wrapper .footer .container .content
+			{
+				position 			: relative;
+				display 			: block;
+				box-sizing 			: border-box;
+				float 				: left;
+				width 				: 25%;
+				height 				: 350px;
+			}	
+				.footer-wrapper .footer .container .content h2
+				{
+					color 				: #fff;
+					text-transform 		: uppercase;
+					font-family 		: "Oswald";
+					text-align 			: center;
+					font-weight 		: 500;
+				}
+				.footer-wrapper .footer .container .content p
+				{
+					color 				: #ddd;
+					font-family 		: "Roboto";
+					text-align 			: justify;
+					padding 			: 15px;
+				}
+				.footer-wrapper .footer .container .content .QLinks ul li
+				{
+					position 				: relative;
+					display 				: block;
+					box-sizing 				: border-box;
+					margin 					: 5px;
+					text-align 				: left;
+					margin-left 			: 60px;
+					padding-left 			: 10px;
+					height 					: 20px;
+					border-left				: 4px solid #fff;
+				}	
+					.footer-wrapper .footer .container .content .QLinks ul li a
+					{
+						text-decoration 		: none;
+						color 					: #ccc;
+						font-family 			: "Roboto";
+					}
+					.footer-wrapper .footer .container .content .QLinks ul li a:hover
+					{
+						color 					: #fff;
+					}
+.footer-bottom
+{
+	position 			: relative;
+	display 			: block;
+	box-sizing 			: border-box;
+	float 				: left;
+	width 				: 100%;
+	height 				: 50px;
+	background-color 	: #202528;
+}
+	.footer-bottom p
+	{
+		color 				: #fff;
+		text-align 			: center;
+	}
+		.footer-bottom p a
+		{
+			color 					: #fff;
+			text-decoration 		: none;
+			border 					: 1px solid #fff;
+			padding 				: 4px 10px;
+			border-radius 			: 50px;
+			font-family 			: "Roboto";
+		}
+		.footer-bottom p a:hover
+		{
+			background-color 		: #fff;
+			color 					: #161616;
+			transition 				: .5s;
+		}
+
+.bann-wrapper
+{
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	height: 100vs;
+	border: 2px solid red;
+}
+	.bann-wrapper .bann img
+	{
+		width: 100%;
+		height: 100%;
+	}
